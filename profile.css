@@ -66,19 +66,19 @@
     justify-content: center;
     margin: 90px auto;
     align-items: center;
-    height: 500px;
+    height: 50vh;
     border: none solid; 
     border-radius: 10px 10px;
     box-shadow: 0 0 15px #cecece;
-    width: 1200px;"
+    width: 1000px;
     padding: 100px;
  }
 
  section {
     display: flex;
-    width: 80%
-    text-align: center;
+    width: 80%;
     padding: 100px;
+    justify-content: center;
  }
  
  .left {
