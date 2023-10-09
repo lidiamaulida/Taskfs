@@ -32,7 +32,6 @@
  nav ul li .active {
     color: black;
     font-weight: bold;
-    font-family: arial;
  }
 
  nav ul li img {
@@ -101,59 +100,48 @@
    display: flex;
  }
 
- section {
-   width: 100%;
-   display: flex;
- }
-
  .date-left {
    flex: 50%;
  }
 
  .date-right {
    flex: 50%;
-   margin-left: 10px;
+   margin-left: 20px;
  }
 
  .techno-container {
    width: 75%;
-   background-color: bisque;
+   padding: 20px;
  }
-
- .checkbox-grup .checkbox-atas {
-   width: 100%;
+ 
+ .checkbox-grup {
    display: flex;
-   background: palevioletred;
-   justify-content: space-between;
+   flex-direction: column;
+   gap: 10px;
  }
-
+ 
+ .checkbox-atas,
  .checkbox-bawah {
    display: flex;
-   width: 100%;
-   background-color: pink;
-   justify-content: space-between;
+   gap: 10px;
  }
-
+ 
+ .checkbox-atas div,
  .checkbox-bawah div {
-   margin: 2px;
-   background: greenyellow;
    display: flex;
+   align-items: center;
+   gap: 5px;
  }
-
- .checkbox-atas div {
-   width: 100%;
-   margin: 2px;
-   background: palegreen;
-   display: grid;
-   
+ 
+ input[type="checkbox"] {
+   margin: 0;
  }
-
- .checkbox-atas div label {
+ 
+ label {
    font-size: 15px;
- }
-
- .checkbox-bawah div label {
-   font-size: 15px;
+   cursor: pointer; 
+   display: inline-flex;
+   align-items: center;
  }
 
  .blog-form form .input-image {
@@ -202,12 +190,13 @@
    margin-top: 50px;
  }
 
+ /*blog list*/
+
  .blog .blog-list {
    margin-top: 80px;
    margin-bottom: 80px;
    display: flex;
    flex-wrap: wrap;
-   align-items: center;
    margin: 100px;
  }
 
@@ -220,6 +209,8 @@
    box-shadow: 0px 0px 15px #cecece;
    display: flex;
    flex-direction: column;
+   margin-left: 50px;
+   margin-top: 30px;
  }
 
  .blog .blog-list .blog-list-items .blog-image {
@@ -228,6 +219,7 @@
 
  .blog .blog-list .blog-list-items .blog-image img {
    width: 100%;
+   height: 225px;
    border-radius: 15px;
    object-fit: cover;
  }
@@ -356,3 +348,105 @@
  .paragraf p {
    font-size: 15px;
  }
+
+ #barsmenu {
+  display: none;
+}
+
+.hamburger-nav-container {
+  font-size: 10px;
+  list-style-type: none;
+  background-color: lightgray;
+  padding: 10px;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+.hamburger-nav-container .hamburger-active {
+  background-color: black;
+  color: white;
+  margin-left: 90px;
+  margin-right: 90px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .blog .blog-list .blog-list-items {
+    width: 35%;
+    margin-left: 1px;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .blog .head {
+    font-size: 25px;
+  }
+
+  .blog .blog-list .blog-list-items .blog-image img {
+    height: 150px;
+  }
+
+  .blog .blog-list .icon i {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  .blog .blog-list {
+    margin: 1px;
+  }
+
+  .blog .blog-list .btn-grup button {
+    width: 100%;
+    margin-right: 5px;
+  }
+
+  .blog .blog-list h3 a {
+    font-size: 12px;
+  }
+
+  .blog .blog-list .blog-list-items p {
+    font-size: 10px;
+  }
+
+  .blog .blog-list .detail-blog-content {
+    font-size: 10px;
+  }
+
+  .blog .blog-list .btn-grup button {
+    margin-right: -20px;
+    margin-right: 2px;
+    width: 70px;
+    padding: 3px;
+  }
+
+  .blog-form .form-container {
+    width: 85%;
+  }
+
+  .date-right {
+    margin-left: 5px;
+    width: 50%;
+  }
+
+  .date-left {
+    width: 50%;
+  }
+
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+  }
+}

@@ -10,18 +10,32 @@
                     <li>
                         <img src="./image/logo.png">
                     </li>
-                    <li class="nav1">
-                        <a class="active" href="index.html">Home</a>
+                    <li class="nav1 item-collapse">
+                        <a href="index.html">Home</a>
                     </li>
-                    <li>
+                    <li class="item-collapse">
                         <a href="blog.html">My Project</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a class="active"  href="testimonial.html">Testimonials</a>
                     </li>
                 </ul>
             </div>
-            <div class="nav-right">
-                <a href="">Contact me</a>
+            <div class="nav-right item-collapse">
+                <a href="contact.html">Contact me</a>
+            </div>
+            <div class="nav-right" id="barsmenu">
+                <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+                    <i class="fa-2x fa-solid fa-bars"></i>
+                </button>
             </div>
         </nav>
+
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+            <a href="index.html">Home</a>
+            <a href="blog.html">My Project</a>
+            <a href="contact.html" class="hamburger-active">Contact me</a>
+        </div>
 
         <form>
             <h2>GET IN TOUCH</h2>
@@ -54,6 +68,7 @@
                  <button type="button" onclick="submitData()">submit</button>
             </div>
         </form>
-        <script src="contact.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/index.html.js"></script>
     </body>
 </html>

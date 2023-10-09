@@ -33,7 +33,6 @@
  nav ul li .active {
     color: black;
     font-weight: bold;
-    font-family: arial;
  }
 
  nav ul li img {
@@ -103,3 +102,44 @@ form .active {
     padding-left: 75%;
     margin-top: 25px;
 }
+
+#barsmenu {
+   display: none;
+ }
+ 
+ .hamburger-nav-container {
+   font-size: 10px;
+   list-style-type: none;
+   background-color: lightgray;
+   padding: 10px;
+   display: none;
+ }
+ 
+ .hamburger-nav-container a {
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   padding: 10px;
+ }
+ 
+ .hamburger-nav-container .hamburger-active {
+   background-color: black;
+   color: white;
+   margin-left: 90px;
+   margin-right: 90px;
+   border-radius: 10px;
+ }
+ 
+ @media only screen and (max-width: 900px) {
+   .item-collapse {
+      display: none;
+    }
+  
+    #barsmenu {
+      display: block;
+    }
+  
+    nav {
+      width: 100%;
+    }
+ }

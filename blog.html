@@ -11,29 +11,43 @@
                     <li>
                         <img src="./image/logo.png">
                     </li>
-                    <li class="nav1">
-                        <a class="active" href="index.html">Home</a>
+                    <li class="nav1 item-collapse">
+                        <a href="index.html">Home</a>
                     </li>
-                    <li>
+                    <li class="item-collapse">
                         <a class="active" href="blog.html">My Project</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a href="testimonial.html">Testimonials</a>
                     </li>
                 </ul>
             </div>
-            <div class="nav-right">
+            <div class="nav-right item-collapse">
                 <a href="contact.html">Contact me</a>
             </div>
+            <div class="nav-right" id="barsmenu">
+                <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+                    <i class="fa-2x fa-solid fa-bars"></i>
+                </button>
+            </div>
         </nav>
+
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+            <a href="index.html">Home</a>
+            <a href="blog.html" class="hamburger-active">My Project</a>
+            <a href="contact.html">Contact me</a>
+        </div>
+
         <div class="blog">
             <div class="blog-form">
                 <div class="form-container">
-                    <form onsubmit="addData(event)">
+                    <form onsubmit="addBlog(event)">
                         <h1>ADD MY PROJECT</h1>
                         <div>
                             <label for="input-projectname">Poject Name</label>
                             <input type="text" id="input-projectname">
                         </div>
                         <div class="date">
-                            <section>
                             <div class="date-left">
                                 <label for="input-startdate">Start Date</label>
                                 <input type="date" id="input-startdate">
@@ -114,6 +128,7 @@
                 </div>
             </div>
         </div>
-        <script src="blog.js"></script>
+        <script src="js/blog.js"></script>
+        <script src="js/index.html.js"></script>
     </body>
 </html>

@@ -86,6 +86,10 @@ section {
    flex: 70%;
 }
 
+.left .lorem p {
+   text-align: justify;
+}
+
 .right {
    flex: 30%;
    margin-left: 50px;
@@ -96,6 +100,79 @@ section div table {
    text-align: center;
    
 }
+
+#barsmenu {
+   display: none;
+}
+
+.hamburger-nav-container {
+   font-size: 10px;
+   list-style-type: none;
+   background-color: lightgray;
+   padding: 10px;
+   display: none;
+}
+
+.hamburger-nav-container a {
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   padding: 10px;
+}
+
+.hamburger-nav-container .hamburger-active {
+   background-color: black;
+   color: white;
+   margin-left: 90px;
+   margin-right: 90px;
+   border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 900px) {
+   .container {
+      width: 35%;
+      height: 800px;
+   }
+
+   .left {
+      flex: 100%;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+   }
+
+   .left h2 {
+      font-size: 20px;
+   }
+
+   .image {
+      margin-bottom: 40px;
+   }
+
+   .right {
+      margin-right: 50px;
+   }
+
+   section {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .item-collapse {
+      display: none;
+   }
+
+   #barsmenu {
+      display: block;
+   }
+
+   nav {
+      width: 100%;
+   }
+}
+
+
  
  
 
