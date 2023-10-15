@@ -55,7 +55,7 @@ function renderBlog() {
                     <h3>
                         <a href="blog-detail.html">${dataBlog[index].projectName}</a>
                     </h3>
-                    <div class="detail-blog-content">durasi : ${dateDiff(dataBlog[index])}</div>
+                    <div class="detail-blog-content">durasi : ${dateDiff(dataBlog[index].starDate, dataBlog[index].endDate)}</div>
                     <p>${dataBlog[index].description}</p>
                     <div class="icon">
                         <i class="fa-brands fa-node-js" ${showNodeJsIcon}></i>
@@ -73,9 +73,9 @@ function renderBlog() {
     }
 }
 
-function dateDiff() {
-    let starDate = new Date(document.getElementById('input-startdate').value);
-    let endDate = new Date(document.getElementById('input-enddate').value);
+function dateDiff(start, end) {
+    let starDate = new Date(start);
+    let endDate = new Date(end);
 
     let distance = Math.abs(endDate - starDate);
     console.log (' distance ===> ', distance);
